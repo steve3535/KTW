@@ -30,7 +30,7 @@
   
   * *Restricted environments:* setup proxy at the OS level  
   ```bash
-  cat EOF <</etc/environment
+  cat <<EOF >/etc/environment
   HTTPS_PROXY=http://172.22.108.7:80
   HTTP_PROXY=http://172.22.108.7:80
   NO_PROXY=10.0.0.0/8,192.168.0.0/16,127.0.0.1,172.16.0.0/16,172.22.108.0/24,172.17.0.0/16,172.22.56.0/24,200.1.1.0/24
